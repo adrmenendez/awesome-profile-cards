@@ -1,39 +1,23 @@
+## awesome-profile-cards
 
-Proyecto  realizado por 5 compañeras durante el transcurso del bootcamp de Adalab.
-Dicho proyecto consiste en heredar código realizado por compañeras de otro equipo,  y refactorizarlo
+## About
 
-Puedes ver el resultado final accediendo directamente a este enlace:
-http://beta.adalab.es/project-promo-m-module-3-team-3/
-****
-#objetivos
-Analizar y refactorizar código heredado
-Identificar y crear componentes de una página
-Uso de React
-Búsqueda de información en librerias externas
+El proyeto se trata de una página web sencilla para crear tarjetas de visita. Tras clickar en el botón de comenzar de la landing page se accede a un sencillo formulario con el que ir personalizando tu tarjeta. Una vez creada, solo tienes que pinchar en el botón de 'crear tarjeta' y se generará un link para compartirla online.
 
+## Como arrancar el proyecto
 
-Para poder llevarlo a cabo hemos aplicado conocimientos adquiridos durante estos meses
-Se detallan algunos de los conocimientos aplicados para realización del proyecto: 
+Para arrancar el proyecto descarga este repo, no lo clones o no podrás hacer commits. Abrelo en tu editor de código y ejecuta el siguiente comando en la terminal en la carpeta raíz del proyecto:
 
-Uso de HTML Ecma6
-Maquetación usando SASS, 
+```bash
+npm install
+```
 
-Uso diseño Responsive
+```bash
+npm run dev
+```
 
-Acceso y envío de datos a un servidor 
+## Tech Stack
 
-Almacenamiento en local usando LocalStorage 
+El servidor ha sido desarrollado usando node.js y express. Usa ejs como motor de plantillas y SASS y CSS como preprocesador.
 
-Uso de git para el control de versiones del proyecto 
-
-Publicación del resultado en Internet usando GitHub Pagesç
-
-##Metodologa de trabajo
-
-MARCO SCRUM dividido en dos sprints
-
-
-##Acceso y estructuración de carpetas del proyecto
-
-
-
+El proyecto de la carpeta /web ha sido desarrollado con React.
