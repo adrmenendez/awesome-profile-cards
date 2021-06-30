@@ -1,0 +1,34 @@
+.collapsible {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  border-bottom: solid 1px #d8d8d8;
+  &__icon {
+    margin-right: 20px;
+    color: $colorNewButton;
+  }
+  &__title {
+    font-family: 'open-sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    flex-grow: 1;
+  }
+  .arrow {
+    cursor: pointer;
+  }
+}
+
+.hideContent {
+  .content {
+    display: none;
+  }
+  .arrow {
+    transform: rotate(-90deg);
+  }
+}
+
+.showContent {
+  .content {
+    display: block;
+  }
+}

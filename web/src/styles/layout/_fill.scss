@@ -1,0 +1,71 @@
+.personal-data {
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  color: $colorText;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.input {
+  height: 30px;
+  padding-left: 9px;
+  margin-bottom: 12px;
+  border: solid $colorSecundary 1px;
+  border-radius: 5px;
+  &::placeholder {
+    color: #c5c5c5;
+  }
+}
+
+.action__hiddenField {
+  display: none;
+}
+
+.get-avatar {
+  display: flex;
+  &__label {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorSecundary;
+    color: white;
+    width: 140px;
+    height: 30px;
+    font-family: $fontText;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+  }
+  &__upload-field {
+    opacity: 0%;
+    position: absolute;
+    left: 45px;
+    cursor: pointer;
+  }
+  &__preview {
+    border: solid grey 1px;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    background-size: cover;
+  }
+}
+
+// .js-border-input {
+//   border: rem(1) solid red;
+// }
+// .js-error-message {
+//   color: red;
+//   display: none;
+//   padding-bottom: rem(11);
+// }
+
+// .js-error {
+//   .js-error-message {
+//     display: block;
+//   }
+// }

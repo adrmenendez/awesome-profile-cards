@@ -1,0 +1,130 @@
+.button_reset {
+  height: 30px;
+  width: 75px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: solid 1px white;
+  background: none;
+  color: #54585a;
+  border-radius: 15px;
+  align-self: flex-start;
+  cursor: pointer;
+  &--icon {
+    padding-right: 4px;
+  }
+}
+
+.main_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #bfcdd0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  width: 100%;
+  height: 329px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 0px rgba(0, 0, 0, 0.35);
+  text-align: left;
+  background-color: white;
+  font-family: $fontCard;
+  padding-top: 16px;
+  &-preview {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    @media all and (min-width: 768px) {
+      padding: 0;
+    }
+  }
+  &_header {
+    padding-left: 24px;
+    margin-bottom: 12px;
+    border-left: $colorpalette2 5px solid;
+    &--name {
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: bold;
+      color: $colorText;
+      padding-bottom: 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &--job {
+      color: #54585a;
+      font-size: 16px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  &_image {
+    height: 200px;
+    width: 240px;
+    background-size: cover;
+  }
+  &_logos {
+    display: flex;
+    flex-direction: row;
+    height: 54px;
+    max-width: 75%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10px;
+    &--icon {
+      height: 32px;
+      width: 32px;
+      text-align: center;
+      line-height: 27px;
+      border: solid 2px $colorpalette3;
+      border-radius: 30px;
+      opacity: 0.5;
+      color: $colorText;
+    }
+  }
+}
+
+.full {
+  opacity: 1;
+}
+
+.palette-2 {
+  .card {
+    &_header {
+      border-left: $colorpalette5 5px solid;
+      &--name {
+        color: $colorpalette4;
+      }
+    }
+    &_logos {
+      &--icon {
+        border: solid 2px $colorpalette6;
+        color: $colorpalette4;
+      }
+    }
+  }
+}
+
+.palette-3 {
+  .card {
+    &_header {
+      border-left: $colorpalette7 5px solid;
+      &--name {
+        color: $colorpalette7;
+      }
+    }
+    &_logos {
+      &--icon {
+        border: solid 2px $colorpalette8;
+        color: $colorpalette7;
+      }
+    }
+  }
+}

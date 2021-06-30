@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./assets/images/favicon.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <link href="/static/css/main.3e1c84d9.chunk.css" rel="stylesheet" type="text/css">
+    <title>Card</title>
+  </head>
+  <body>
+    <main class="main_card">
+        <section class="card_preview">
+          <section class="card palette-<%= palette %>">
+            <div class='card_header'>
+              <h2 class='card_header--name'>
+                <%= name %>
+              </h2>
+              <h3 class='card_header--job'>
+                <%= job %>
+              </h3>
+            </div>
+            <div class="card_image" style="background-image:url('<%= photo %>')"></div>
+            <ul class="card_logos">
+              <li class="card_logos--icon full">
+                <a href='tel:<%= phone %>' class="full"><i class="fas fa-mobile-alt"></i></a>
+              </li>
+              <li class="card_logos--icon full">
+                <a href='mailto:<%= email %>' class="full"><i class="far fa-envelope"></i></a>
+              </li>
+              <li class="card_logos--icon full">
+                <a href="https://www.linkedin.com/in/<%= linkedin %>" class="full"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="card_logos--icon full">
+                <a href="https://www.github.com/<%= github %>" class="full"><i class="fab fa-github-alt"></a></i>
+              </li>
+            </ul>
+          </section>
+        </section>
+    </main>
+  </body>
+</html>
